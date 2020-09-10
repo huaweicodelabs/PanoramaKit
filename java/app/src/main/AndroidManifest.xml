@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.huawei.panoramakit.demo">
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    package="com.huawei.hms.panorama.demo">
 
     <application
         android:allowBackup="true"
@@ -20,9 +18,10 @@
         </activity>
 
         <activity
-            android:name=".LocalInterfaceActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"></activity>
-
+            android:name=".LocalDisplayActivity"
+            android:screenOrientation="sensor"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
     </application>
 
 </manifest>
